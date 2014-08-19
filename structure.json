@@ -1,0 +1,20 @@
+{
+	"resources": {
+		"posts": {
+			"title": "text:required"
+		},
+		"images": {
+			"url": "text:required|url",
+			"alt": "text"
+		}
+	},
+	"driver": "redis",
+	"redis": {
+		"host": "127.0.0.1",
+		"port": "6379"
+	},
+	"scripts": [
+		"panel/dist/js/cair.js",
+		"config.js"
+	]
+}
